@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97CFD7AB-8E35-4ED4-9178-F3FBDA5BCF73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LoginPage</RootNamespace>
+    <AssemblyName>LoginPage</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountSetting.designer.cs">
+      <DependentUpon>accountSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountType.Designer.cs">
+      <DependentUpon>AccountType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClassSectionData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClassSectionData.designer.cs">
+      <DependentUpon>AddClassSectionData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacherForm.designer.cs">
+      <DependentUpon>AddTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTopic.designer.cs">
+      <DependentUpon>AddTopic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminFormChangeEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFormChangeEmail.designer.cs">
+      <DependentUpon>adminFormChangeEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminFormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFormChangePassword.designer.cs">
+      <DependentUpon>adminFormChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminFormChangeUserName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFormChangeUserName.designer.cs">
+      <DependentUpon>adminFormChangeUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTeacherToClassAndSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTeacherToClassAndSection.designer.cs">
+      <DependentUpon>AssignTeacherToClassAndSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="callforQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="callforQuiz.Designer.cs">
+      <DependentUpon>callforQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentsOfSystemUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComponentsOfSystemUnit.Designer.cs">
+      <DependentUpon>ComponentsOfSystemUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateQuiz.designer.cs">
+      <DependentUpon>CreateQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluation Exercise 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluation Exercise 1.Designer.cs">
+      <DependentUpon>Evaluation Exercise 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordResetPass.designer.cs">
+      <DependentUpon>ForgotPasswordResetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordSendcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordSendcode.designer.cs">
+      <DependentUpon>ForgotPasswordSendcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewOfManageNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridViewOfManageNotification.Designer.cs">
+      <DependentUpon>GridViewOfManageNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridviewOfStudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridviewOfStudentData.designer.cs">
+      <DependentUpon>GridviewOfStudentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridviewOfTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridviewOfTeacher.designer.cs">
+      <DependentUpon>GridviewOfTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intro to computer software and hardware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro to computer software and hardware.designer.cs">
+      <DependentUpon>intro to computer software and hardware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntrotoComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntrotoComputer.designer.cs">
+      <DependentUpon>IntrotoComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageQuiz.designer.cs">
+      <DependentUpon>ManageQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticeExercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeExercise.designer.cs">
+      <DependentUpon>PracticeExercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz.designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result_Screen.designer.cs">
+      <DependentUpon>Result_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnclass.cs" />
+    <Compile Include="SendCodeToChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendCodeToChangePassword.designer.cs">
+      <DependentUpon>SendCodeToChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setexam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setexam.Designer.cs">
+      <DependentUpon>setexam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student view Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student view Video.designer.cs">
+      <DependentUpon>Student view Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentActivity.designer.cs">
+      <DependentUpon>StudentActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLecturesandReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLecturesandReport.designer.cs">
+      <DependentUpon>StudentLecturesandReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentLogin.Designer.cs">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentReport.designer.cs">
+      <DependentUpon>StudentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherActivity.Designer.cs">
+      <DependentUpon>TeacherActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherLogin.Designer.cs">
+      <DependentUpon>teacherLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherviewStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherviewStudents.designer.cs">
+      <DependentUpon>TeacherviewStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoComputeHardware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoComputeHardware.designer.cs">
+      <DependentUpon>VideoComputeHardware.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accountSetting.resx">
+      <DependentUpon>accountSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountType.resx">
+      <DependentUpon>AccountType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClassSectionData.resx">
+      <DependentUpon>AddClassSectionData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacherForm.resx">
+      <DependentUpon>AddTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTopic.resx">
+      <DependentUpon>AddTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFormChangeEmail.resx">
+      <DependentUpon>adminFormChangeEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFormChangePassword.resx">
+      <DependentUpon>adminFormChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFormChangeUserName.resx">
+      <DependentUpon>adminFormChangeUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTeacherToClassAndSection.resx">
+      <DependentUpon>AssignTeacherToClassAndSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="callforQuiz.resx">
+      <DependentUpon>callforQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentsOfSystemUnit.resx">
+      <DependentUpon>ComponentsOfSystemUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateQuiz.resx">
+      <DependentUpon>CreateQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluation Exercise 1.resx">
+      <DependentUpon>Evaluation Exercise 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordResetPass.resx">
+      <DependentUpon>ForgotPasswordResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordSendcode.resx">
+      <DependentUpon>ForgotPasswordSendcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridViewOfManageNotification.resx">
+      <DependentUpon>GridViewOfManageNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridviewOfStudentData.resx">
+      <DependentUpon>GridviewOfStudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridviewOfTeacher.resx">
+      <DependentUpon>GridviewOfTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro to computer software and hardware.resx">
+      <DependentUpon>intro to computer software and hardware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntrotoComputer.resx">
+      <DependentUpon>IntrotoComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageQuiz.resx">
+      <DependentUpon>ManageQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeExercise.resx">
+      <DependentUpon>PracticeExercise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result_Screen.resx">
+      <DependentUpon>Result_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendCodeToChangePassword.resx">
+      <DependentUpon>SendCodeToChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setexam.resx">
+      <DependentUpon>setexam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student view Video.resx">
+      <DependentUpon>Student view Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentActivity.resx">
+      <DependentUpon>StudentActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLecturesandReport.resx">
+      <DependentUpon>StudentLecturesandReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentLogin.resx">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentReport.resx">
+      <DependentUpon>StudentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherActivity.resx">
+      <DependentUpon>TeacherActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherLogin.resx">
+      <DependentUpon>teacherLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherviewStudents.resx">
+      <DependentUpon>TeacherviewStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoComputeHardware.resx">
+      <DependentUpon>VideoComputeHardware.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\Windows\Forms\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
